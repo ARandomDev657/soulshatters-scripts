@@ -1,0 +1,30 @@
+local args = {
+    [1] = getrenv()._G.Pass,
+    [2] = game:service("Players").LocalPlayer.Character,
+    [3] = {
+        ["HitTime"] = 0,
+        ["Type"] = "Normal",
+        ["HitEffect"] = "LightHitEffect",
+        ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Hurt1,
+        ["Velocity"] = Vector3.new(0, 1, 0),
+        ["Sound"] = game:GetService("ReplicatedStorage").Resources.Character.CustomMusic.Sans.StarterPlaylist['1Megalovania'],
+        ["Damage"] = 0
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+local args = {
+    [1] = getrenv()._G.Pass,
+    [2] = game:service("Players").LocalPlayer.Character,
+    [3] = {
+        ["HitTime"] = 0,
+        ["Type"] = "Normal",
+        ["HitEffect"] = "LightHitEffect",
+        ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Hurt1,
+        ["Velocity"] = Vector3.new(0, 1, 0),
+        ["Sound"] = game:GetService("ReplicatedStorage").Resources.Character.CustomMusic.Sans.StarterPlaylist['1Megalovania'],
+        ["Damage"] = 0
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
